@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-GBXINsC7z55zK9hHJBXyZ4H7ZfC5VeE8i9EsCVFXLuv1RKzNxU64wD8ok8rkXj0S9xMfTfwMpjD8eCrj4tmHlw==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicons/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>India's Biggest Holiday Home Expo</title>
+    <link rel="stylesheet" href="desktop1080.css" />
+    <link rel="stylesheet" href="index.css" />
+    <!-- <link rel="stylesheet" href="slider.css" /> -->
+
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="mobileresponsive.css"/>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo" onclick="nagivate()">
+        <a href="#profile"> 
+          <svg
+          class="weather-logo"
+          version="1.1" 
+          id="Layer_1"
+          x="0px"
+          y="0px"
+          width="120px"
+          height="120px"
+          viewBox="0 0 100 100"
+          xml:space="preserve"
+          >
+          <image
+          id="image-logo"
+          
+          x="0"
+          y="0"
+          href="images/pngs/expologoCroped.png"
+          ></image>
+       </svg>
+        </a>
+       
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Visit</a></li>
+          <li><a href="#experience">Exhibit</a></li>
+          <li><a href="#projects">About</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo" onclick="nagivate()">
+        <a href="#profile"> 
+          <svg
+          class="weather-logo"
+          version="1.1" 
+          id="Layer_1"
+          x="0px"
+          y="0px"
+          width="100px"
+          height="100px"
+          viewBox="0 0 100 100"
+          xml:space="preserve"
+          >
+          <image
+          id="image-logo"
+          
+          x="0"
+          y="0"
+          href="images/pngs/expologoCroped.png"
+          ></image>
+       </svg>
+        </a>
+       
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span> 
+        </div>
+        <ul class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Visit</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Exhibit</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">About</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact us</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <section id="profile">
+      <div class="container">
+        <div class="slide">
+
+        <div class="item" style="background-image: url(/images/karnataka/aerial-view-beautiful-sky-road-top-mountains-with-green-jungle-nan-province-thailand_335224-1063.jpg)">
+          <div class="item-content">
+             <div class="item-name">Karnataka</div>
+
+              <div class="description">Known as the "Scotland of India," Coorg is famous for its coffee
+               plantations, misty hills, and natural beauty, ideal for holiday retreats.</div>
+          
+          </div>
+          </div>
+          <div class="item" style="background-image: url(/images/Goa/Goa1.jpg)">
+          <div class="item-content">
+          <div class="item-name">Goa</div>
+          <div class="description">Known for its beautiful beaches, vibrant nightlife, and Portuguese heritage, Goa is a top
+          destination for holiday homes in India.</div>
+          
+          </div>
+          </div>
+          <div class="item" style="background-image: url(/images/Manali/Manali.webp)">
+          <div class="item-content">
+          <div class="item-name">Manali</div>
+          <div class="description"> Nestled in the Himalayas, Manali offers breathtaking views,
+          adventure activities, and a peaceful retreat for holidaymakers.</div>
+          
+          </div>
+          </div>
+          <div class="item" style="background-image: url(/images/udaipurRajastan/UDAIPUR.jpg)">
+          <div class="item-content">
+          <div class="item-name">Udaipur, Rajasthan</div>
+          <div class="description">The city of lakes, Udaipur, offers majestic palaces, rich heritage, and a
+          romantic ambiance, making it a sought-after destination for holiday homes.</div>
+          
+          </div>
+          </div>
+          <div class="item" style="background-image: url(/images/Nainitaluttarakhand/summertimebled.jpg)">
+          <div class="item-content">
+          <div class="item-name">Nainital, Uttarakhand</div>
+          <div class="description">Surrounded by mountains and dotted with lakes, Nainital is known for
+          its scenic beauty and pleasant weather, attracting holiday home buyers.</div>
+          
+          </div>
+          </div>
+          <div class="item" style="background-image: url(/images/maharastra/mahabodhitemplenight-bodh-gaya-india-site-where-gautam-buddha-attained-enlightenment_554837-119.jpg)">
+          <div class="item-content">
+          <div class="item-name">Alibaug, Maharashtra</div>
+          <div class="description">Located near Mumbai, Alibaug offers pristine beaches, historic forts,
+          and luxurious villas, making it a popular choice for holiday homes</div>
+          
+          </div>
+          </div>
+          <div class="item" style="background-image: url(/images/pondicherry/promenadebeachpondicherry.jpg)">
+          <div class="item-content">
+          <div class="item-name">pondicherry</div>
+          <div class="description">The serene backwaters, lush greenery, and tranquil atmosphere make
+          Kerala a favorite for holiday homes and retreats.</div>
+          
+          </div>
+          </div>
+          <div class="item" style="background-image: url(/images/Nainitaluttarakhand/summertimebled.jpg)">
+          <div class="item-content">
+          <div class="item-name">Nainital, uttarakhand</div>
+          <div class="description">The serene backwaters, lush greenery, and tranquil atmosphere make
+          Kerala a favorite for holiday homes and retreats.</div>
+          
+          </div>
+          </div>
+          <div class="item" style="background-image: url(/images/kerala/keralatourism.jpg)">
+          <div class="item-content">
+          <div class="item-name">Kerala</div>
+          <div class="description">The serene backwaters, lush greenery, and tranquil atmosphere make
+          Kerala a favorite for holiday homes and retreats.</div>
+          
+          </div>
+          </div>
+          <div class="hero-title">
+            <h1 id="hero">India's Biggest Holiday Home Expo 2025</h1>
+            <h3 id="hero">Dates <span class="highlight">4th</span>, <span class="highlight">5th</span>, and <span class="highlight">6th</span> April 2025 <i class="fas fa-calendar-alt"></i></h3>
+            <h1 id="hero">venue - <a href="https://www.google.com/maps/place/HITEX+Exhibition+Centre/@17.4681417,78.3742823,16.13z/data=!4m6!3m5!1s0x3bcb922d7708a939:0x6608389e21aa1310!8m2!3d17.470305!4d78.3765987!16s%2Fg%2F1ygltgfh5?entry=ttu" target="_blank">Hitex</a></h1>
+          </div>
+          <div class="buttons">
+          
+          
+          <button id="previous"></button> 
+          <button id="next"></button>
+          </div>
+          
+          
+          
+          
+          
+          </div>
+      </div>    
+      
+    </section>
+
+
+
+    
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">Why visit ?</h1>
+    
+      <div class="why-participate-container">
+        <div class="cardContainer">
+              <div class="card">
+           <p class="city">Global Exposure</p>
+           <p class="weather"></p>
+           <svg
+           class="weather"
+           version="1.1"
+           id="Layer_1"
+           x="0px"
+           y="0px"
+           width="260px"
+           height="260px"
+           viewBox="0 0 100 100"
+           xml:space="preserve"
+           >
+           <image
+           id="image0"
+           width="100"
+           height="100"
+           x="0"
+           y="0"
+           href="images/pngs/Networking2.png"
+           ></image>
+           </svg>
+        
+        <p class="temp"></p>
+              </div>
+              <div class="card">
+           <p class="city">Networking</p>
+           <p class="weather"></p>
+           <svg
+           class="weather"
+          version="1.1"
+        id="Layer_1"
+        x="0px"
+        y="0px"
+        width="260px"
+        height="260px"
+        viewBox="0 0 100 100"
+        xml:space="preserve"
+        >
+        <image
+        id="image0"
+        width="100"
+        height="100"
+        x="0"
+        y="0"
+        href="images/pngs/networking3.png"
+        ></image>
+           </svg>
+          
+        
+              </div>
+              <div class="card">
+            <p class="city">Building Trust</p>
+            <p class="weather"></p>
+        
+            <svg
+        class="weather"
+        version="1.1"
+        id="Layer_1"
+        x="0px"
+        y="0px"
+        width="260px"
+        height="260px"
+        viewBox="0 0 100 100"
+        xml:space="preserve"
+        >
+        <image
+        id="image0"
+        width="100"
+        height="100"
+        x="0"
+        y="0"
+        href="images/pngs/R-1.png"
+        ></image>
+            </svg>
+        
+               </div>
+               <div class="card">
+        <p class="city">Convenience</p>
+        <p class="weather"></p>
+        <svg
+        class="weather"
+        version="1.1"
+        id="Layer_1"
+        x="0px"
+        y="0px" 
+        width="260px"
+        height="260px"
+        viewBox="0 0 100 100"
+        xml:space="preserve"
+        >
+        <image
+        id="image0"
+        width="100"
+        height="100"
+        x="0"
+        y="0"
+        href="images/pngs/convenience2.png"
+        ></image>
+        </svg>
+        <p class="temp"></p>
+        
+        
+               </div>  
+        </div>
+      </div>  
+    </section>
+
+
+    
+    <section id="experience">
+      <div class="explore-content-div">
+        <p class="section__text__p1" style="color: azure;">Explore </p>
+        <h1 class="title">Why Hyderabad ? India's Growing Real Estate Market</h1>
+      </div>  
+    <div class="explore-container">
+      
+       
+        <div class="explore-card">
+            <p class="card-title"><img src="/images/expolocation/-economic-stability.png" ></p>
+            <p class="small-desc" style="color: aliceblue;">
+              ECONOMINC STABILITY
+            </p>
+           
+        </div>
+
+        <div class="explore-card ">
+            <p class="card-title"><img src="/images/expolocation/population-growth-.png"></p>
+            <p class="small-desc" style="color: aliceblue;">
+                   POPULATION GROWTH
+            </p>
+        </div>
+
+
+        <div class="explore-card ">
+            <p class="card-title"><img src="/images/expolocation/Infrastructure-1.png" ></p>
+            <p class="small-desc" style="color: aliceblue;">
+                  INFRASTRUCTURE
+            </p>
+       
+        </div>
+       
+        <div class="explore-card ">
+            <p class="card-title"><img src="/images/expolocation/Growth Potential-.png" ></p>
+            <p class="small-desc" style="color: aliceblue;">
+              GROWTH POTENTIAL
+            </p>
+            
+        </div>
+    
+        <div class="explore-card ">
+            <p class="card-title"><img src="/images/expolocation/Political Support--.png" ></p>
+            <p class="small-desc" style="color: aliceblue;">
+                POLITICAL SUPPORT
+            </p>
+   
+        </div>
+    
+         <div class="explore-card ">
+             <p class="card-title"><img src="/images/expolocation/Rental Demand--.png" >
+             </p>
+            <p class="small-desc" style="color: aliceblue;">
+              RENTAL DEMAND
+            </p>
+   
+         </div>
+         <div class="explore-card ">
+            <p class="card-title"><img src="/images/expolocation/Affordability-.png"></p>
+            <p class="small-desc" style="color: aliceblue;">
+                 AFFORDABILITY
+              </p>
+      
+         </div>
+
+         <div class="explore-card ">
+            <p class="card-title"><img src="/images/expolocation/Primier crowd--.png" ></p>
+            
+            <p class="small-desc" style="color: aliceblue;">
+              PREMIER CROWD
+            </p>
+           
+        </div>
+
+        <div class="explore-card explore-last-card ">
+            <p class="card-title"><img src="/images/expolocation/Luxury Investments.png" ></p>
+            <p class="small-desc" style="color: aliceblue;">
+              LUXURY INVESTMENTS
+            </p>
+            
+        </div>
+         
+    </div>
+
+    </section>
+
+
+    
+    <div class="space"></div>
+    <section id="projects">
+      <p class="section__text__p1">Browse</p>
+      <h1 class="title">Venue and It's Location</h1>
+      <div class="map-responsive">
+        <img class="venue-expo-image2" src="images/expolocation/Rakesh-2-.jpg"/>
+          <img class="venue-expo-image1" src="images/expolocation/Rakesh-2.jpg" /> 
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.7786584595515!2d78.3765987!3d17.470305000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb922d7708a939%3A0x6608389e21aa1310!2sHITEX%20Exhibition%20Centre!5e0!3m2!1sen!2sin!4v1714725579362!5m2!1sen!2sin" width="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+      </div>
+
+    </section>
+    <section id="contact">
+      
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Us</h1>
+     
+      <div class="contact-info-upper-container2">
+        <div class="contact-info-container2">
+          <img
+            src="./images/pngs/gmail.png"
+            
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:developer@fracspace.com"
+              >developer@fracspace.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container2 contact-info-container-item2">
+          <img
+            src="./images/pngs/instagram.png"
+            alt="Instagram"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.instagram.com/fracspace/">Instagram</a>
+          </p>
+        </div>
+      </div>
+
+     
+      
+      <div class="contact-image">
+        <svg
+        class="weather1"
+        version="1.1"
+        id="Layer_1"
+        x="0px"
+        y="0px"
+        width="500px"
+        height="500px"
+        viewBox="0 0 100 100"
+        xml:space="preserve"
+        >
+        <image
+        id="image0 first-svg"
+        width="100"
+        height="100"
+        x="0"
+        y="0"
+        href="images/pngs/contactus2.png"
+        ></image>
+       </svg>
+       <svg
+       class="weather2"
+       version="1.1"
+       id="Layer_1"
+       x="0px"
+       y="0px"
+       width="500px"
+       height="500px"
+       viewBox="0 0 100 100"
+       xml:space="preserve"
+       >
+       <image
+       id="image0 second-svg"
+       width="100"
+       height="100"
+       x="0"
+       y="0"
+       href="images/pngs/contactus3.png"
+       ></image>
+      </svg>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+        
+          <ul class="nav-links">
+            <li><a href="#about">Visit</a></li>
+            <li><a href="#experience">Exhibit</a></li>
+            <li><a href="#projects">Location</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Fracspace. All Rights Reserved.</p>
+
+
+      
+    </footer>
+    <script src="script.js"></script>
+    <script src="slider.js"></script>
+  </body>
+</html>
