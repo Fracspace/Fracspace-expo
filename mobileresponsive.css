@@ -1,85 +1,96 @@
-@media screen and (min-width: 300px) and (max-width: 500px) {
+@media screen and (min-width: 300px) and (max-width: 450px) {
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+      
 
-
+  /* why visit */
+      
    
+      
+     
+      
+      
+
+
+      .city{
+        font-weight: 900;
+        font-size: 0.9em;
+        letter-spacing: 1.2px;
+        color: rgb(247, 245, 245);
+      }
+
+      #experience{
+        position: relative;
+        top:-175px;
+      }
+
+
+      .explore-container {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 5px;
+        padding: 20px;
+        height: auto;
+      }
+     
+    
+      .explore-card p {
+        font-size: 6px;
+      }
+
+      .explore-card img{
+        width: 400px;
+        height: 450px;
+        display: 'inline-block';
+      }
+
+     
+   
+    
+    
+  }
+
+
+  @media screen and (max-width: 600px) {
+    #hamburger-nav {
+        display: flex;
+    }
     
     #desktop-nav {
         display: none;
     }
-
-    #hamburger-nav {
-      display: flex;
-  }
-        
+      
     .logo svg {
-        position: relative;
-        top: 50px;
-        left: 70px;
-        width: 200px;
+      width: 100px; 
+      height: auto; 
+      position: relative;
+      top: -10px; 
+      left: -5px; 
     }
 
 
+    section{
+      height: 100vh;
+      margin: 0 0rem;
+      box-sizing: border-box;
+      min-height: fit-content;
+    }
+    
+   
+   
+   
 
+     /* hero  */
 
-    #profile{
-        height: 37vh;
-        margin-bottom: auto;
-    }
-    
-    
-    .container {
-        min-height: auto; 
-        padding-top: 50px; 
-    }
-    .item::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); 
-    }
-    
-    .item .item-content {
-        width: calc(100% - 20px);
-    }
-    
-    .container .hero-title {
-        position: relative;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        top: 20%;
-        left: 7px;
-        z-index: 999;
-        display: flex;
-        flex-wrap: wrap;
-        font-size: larger;
-        color: rgb(255, 7, 7);
-    }
-    
-    .hero-title {
-        position: relative;
-        align-items: center;
-        left: 30px;
-    }
-    
-    #hero {
-        font-size: 23px;
-        color: #f3f3f3;
-    }
-    
-    .highlight {
-        color: #59ff00;
-        font-weight: bolder;
+     #profile{
+      height: 37vh;
+      margin-bottom: auto;
     }
 
-      /* hero  */
       .container {
         top: 60px;
         min-height: 100vh;
@@ -133,356 +144,6 @@
       .description {
         display: none;
       }
-  
-
-
-
-
-        /*why visit container */
-
-        .why-participate-container {
-          position: relative;
-          padding: 25px;
-          display: flex;
-          justify-content: center;
-          width: 100%;
-          height: 500px;
-          background-color: #011327;
-      
-      
-         
-        }
-        .cardContainer  {
-      
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 50px;
-      }
-       
-      
-      
-        
-      
-      .cardContainer {
-          width: fit-content;
-          position: relative;
-          display: flex;
-          align-items:center;
-          justify-content: center;
-        }
-        
-        .card {
-          position: relative;
-          width: 290px;
-          height: 200px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content:space-around;
-          margin-top: 1px;
-          margin-left: 5px;
-          padding: 20px 10px;
-          border-radius: 10px;
-          backdrop-filter: blur(60px);
-          background-color: rgba(213, 213, 213, 0.308);
-          border: 1px solid rgba(255, 255, 255, 0.089);
-          cursor: pointer;
-          transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-        }
-      
-         /* .cardContainer {
-          grid-template-columns: repeat(2, 1fr);
-        } */
-      
-        #image1 {
-          background: url('images/pngs/BuildingTrust.png') no-repeat center center;
-          background-size: contain;
-          object-fit: contain;
-          width: 150px; /* Adjust as needed */
-          height: 150px; /* Adjust as needed */
-        }
-        #image2 {
-          background: url('images/pngs/networking1.png') no-repeat center center;
-          background-size: contain;
-          object-fit: contain;
-          width: 100px; /* Adjust as needed */
-          height: 100px; /* Adjust as needed */
-        }
-        #image3 {
-          background: url('images/pngs/networking1.png') no-repeat center center;
-          background-size: contain;
-          object-fit: contain;
-          width: 150px; /* Adjust as needed */
-          height: 150px; /* Adjust as needed */
-        }
-        #image4 {
-          background: url('images/pngs/convenience2.png') no-repeat center center;
-          background-size: contain;
-          object-fit: contain;
-          width: 150px; /* Adjust as needed */
-          height: 150px; /* Adjust as needed */
-          border: none; /* Remove border */
-      }
-      
-        
-        
-        
-        .city {
-          font-weight: 500;
-          font-size: 0.9em;
-          letter-spacing: 1.2px;
-          color: white;
-        }
-        
-        .weather {
-          font-weight: 500;
-          font-size: 0.7em;
-          letter-spacing: 1.2px;
-          color: rgb(197, 197, 197);
-        }
-        
-        .temp {
-          font-size: 1.8em;
-          color: white;
-        }
-        
-       
-        
-        .card:hover{
-          z-index: 999;
-          transform: scale(1.5);
-        }
-        
-        
-        
-       
-        
-        .cardContainer:hover::before {
-          transform: translate(-50px, 50px);
-        }
-        
-      
-
-
-
-
-
-
-        #about {
-            position:relative;
-          }
-          
-          .about-containers {
-            gap: 2rem;
-            
-          }
-          
-          .about-details-container {
-            justify-content:center;
-            flex-direction: column;
-          }
-          
-          .about-containers,
-          .about-details-container {
-            display: flex;
-          }
-          
-          .about-pic {
-            border-radius: 250px;
-            height: 300px;
-            width: 250px;
-          }
-          
-         
-          
-          
-         
-          
-      
-       
-    
-
-    #contact,
-    footer {
-      height: auto;
-    }
-   
-    article {
-      font-size: 1rem;
-    }
-    footer nav {
-      display:flex;
-      flex-direction: column;
-      height: fit-content;
-      margin-bottom: 2rem;
-    }
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-      flex-wrap: wrap;
-    }
-    
-    .contact-info-container2 p,
-    .nav-links li a {
-      font-size: 1rem;
-    }
-    .experience-sub-title {
-      font-size: 1.25rem;
-    }
-    .logo {
-      font-size: 1.5rem;
-    }
-    .nav-links {
-      flex-direction: row;
-      gap: 0.7rem;
-      text-align: center;
-    }
-    .section__pic-container {
-      width: auto;
-      height: 46vw;
-      justify-content: center;
-    }
-    .section__text__p1 {
-      font-size: 1.25rem;
-    }
-    .title {
-      font-size: 2rem;
-    }
-    .text-container {
-      text-align: justify;
-    }
-    .weather1{
-        display: none;
-    }
-
-
-    
-
-  /* why visit */
-      
-    .cardContainer {
-        width: auto;
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: start;
-        align-items: start;
-      }
-      
-      
-      
-
-      .card {
-        width: 125px;
-        height:135px;
-        
-      }
-
-      .city{
-        font-weight: 900;
-        font-size: 0.9em;
-        letter-spacing: 1.2px;
-        color: rgb(247, 245, 245);
-      }
-
-      #experience{
-        position: relative;
-        top:-175px;
-      }
-
-
-      .explore-container {
-        display: grid;
-        grid-template-columns: repeat(2, 2fr);
-        gap: 5px;
-        padding: 20px;
-        height: auto;
-      }
-    
-/* 
-      .explore-card {
-        position: relative;
-        width: 350px;
-        height: 360px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content:space-around;
-        margin: 5px;
-        margin-top: 50px;
-        padding: 10px 10px;
-        border-radius: 10px;
-        backdrop-filter: blur(30px);
-        background-color: rgba(207, 21, 21, 0.308);
-        border: 1px solid rgba(255, 255, 255, 0.089);
-        cursor: pointer;
-        transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-      } */
-     
-    
-      .explore-card p {
-        font-size: 6px;
-      }
-
-      .explore-card img{
-        width: 400px;
-        height: 450px;
-        display: 'inline-block';
-      }
-
-      .map-responsive {
-        overflow: hidden;
-        position: relative;
-        padding-bottom: 70%;
-      }
-      
-      .map-responsive .venue-expo-image1 {
-        width: 100%;
-        display: none;
-      }
-      
-      .map-responsive .venue-expo-image2 {
-        width: 100%;
-        display: none;
-      }
-      
-      .map-responsive iframe {
-        left: 0;
-        top: 30px;
-        border: 0;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-      }
-      .map-responsive .map {
-        height: 500px; /* Adjust the height as needed */
-      }
-      
-
-      
-   
-    
-    
-  }
-
-
-  @media screen and (max-width: 600px) {
-    #hamburger-nav {
-        display: flex;
-    }
-    
-    #desktop-nav {
-        display: none;
-    }
-    
-   
-    #profile{
-        height: 37vh;
-        margin-bottom: auto;
-    }
-    
-    
     .container {
         min-height: auto;
         padding-top: 50px; 
@@ -514,99 +175,22 @@
         font-size: 21px;
         color: #fbfbfb;
     }
-    
     .highlight {
-        color: #d81414;
-        font-weight: bolder;
+      color: #f5ce0c;
+      font-weight: bolder;
     }
+
+
+
+
+    
+    /* ****************************************************************************** */
         /*why visit container */
 
         #about {
             position:relative;
           }
           
-          .about-containers {
-            gap: 2rem;
-            
-          }
-          
-          .about-details-container {
-            justify-content:center;
-            flex-direction: column;
-          }
-          
-          .about-containers,
-          .about-details-container {
-            display: flex;
-          }
-          
-          .about-pic {
-            border-radius: 250px;
-            height: 300px;
-            width: 250px;
-          }
-          
-         
-          
-          .details-container {
-            padding: 1.5rem;
-            flex: 1;
-            background: white;
-            border-radius: 2rem;
-            border: rgb(53, 53, 53) 0.1rem solid;
-            border-color: rgb(163, 163, 163);
-            text-align: center;
-          }
-          
-          .section-container {
-            gap: 4rem;
-            height: 80%;
-          }
-          
-          .section__pic-container {
-            height: 400px;
-            width: 400px;
-            margin: auto 0;
-          }
-          
-      
-          #hamburger-nav {
-            display: flex;
-            align-items: center;
-            position:sticky;
-
-          }
-          
-          .logo {
-            margin-right: 10px; 
-          }
-          
-          .menu-links {
-            display: flex;
-            gap: 20px; 
-            list-style: none;
-            padding: 0;
-            margin: 0;
-          }
-          
-          .menu-links li {
-            margin: 0;
-          }
-          
-          .menu-links li a {
-            text-decoration: none;
-            color: #000; 
-          }
-          
-        
-          .logo svg {
-            width: 100px; 
-            height: auto; 
-            position: relative;
-            top: -10px; 
-            left: -5px; 
-          }
-
           #previous,
           #next {
           width: 30px;
@@ -695,14 +279,29 @@
 
   /* why visit */
       
-    .cardContainer {
+    .cardContainer{
         width: auto;
         position: relative;
+        gap: 5px 0px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+      }
+
+      .cardContainer  {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 10px;
+      }
+
+      .card {
+        position: relative;
+        width: 155px;
+        height: 190px;
+        
       }
       
       .space{
@@ -710,13 +309,6 @@
         top:50px;
         left:50px;
       }
-  
-
-     
-
-
-      
-    
 
       .explore-card {
         position: relative;
@@ -728,8 +320,6 @@
         justify-content:space-around;
         margin: 10px;
         margin-top: 50px;
-        /* margin-top: 55px;  */
-        /* margin-left: 130px; */
         padding: 10px 10px;
         border-radius: 10px;
         backdrop-filter: blur(30px);
@@ -753,6 +343,42 @@
         display: none;
       }
 
+      .map-responsive {
+        overflow: hidden;
+        padding-bottom: 90%;
+        position: relative;
+        height: 0;
+      }
+      
+      .venue-expo-image1,
+      .venue-expo-image2,
+      .map {
+        display: none; /* Hide images and iframe on mobile */
+      }
+      
+      .location-mobile-view {
+        width: 100vw; /* Use viewport width */
+        height: 100vh; /* Use viewport height */
+        object-fit: cover; /* Ensure the image covers the entire container */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center the image */
+      }
+      
+      /* Optional: Remove default link styles */
+      .location-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: inherit;
+      }
+      
+
+    
+      
+     
       
 
       

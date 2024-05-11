@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">  
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,12 +15,10 @@
     <title>India's Biggest Holiday Home Expo</title>
     <link rel="stylesheet" href="desktop1080.css" />
     <link rel="stylesheet" href="index.css" />
-    <!-- <link rel="stylesheet" href="slider.css" /> -->
-
     <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="stylesheet" href="mobileresponsive.css"/>
     
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
 
 
   </head>
@@ -59,6 +57,7 @@
         </ul>
       </div>
     </nav>
+    
     <nav id="hamburger-nav">
       <div class="logo" onclick="nagivate()">
         <a href="#profile"> 
@@ -207,9 +206,8 @@
     
       <div class="why-participate-container">
         <div class="cardContainer">
-              <div class="card">
+          <div class="card">
            <p class="city">Global Exposure</p>
-           <p class="weather"></p>
            <svg
            class="weather"
            version="1.1"
@@ -407,15 +405,20 @@
     
     <div class="space"></div>
     <section id="projects">
-      <p class="section__text__p1">Browse</p>
-      <h1 class="title">Venue and It's Location</h1>
-      <div class="map-responsive">
-        <img class="venue-expo-image2" src="images/expolocation/Rakesh-2-.jpg"/>
-          <img class="venue-expo-image1" src="images/expolocation/Rakesh-2.jpg" /> 
-          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.7786584595515!2d78.3765987!3d17.470305000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb922d7708a939%3A0x6608389e21aa1310!2sHITEX%20Exhibition%20Centre!5e0!3m2!1sen!2sin!4v1714725579362!5m2!1sen!2sin" width="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          
-      </div>
+       <div class="location-container">
 
+      
+        <p class="section__text__p1">Browse</p>
+        <h1 class="title">Venue and It's Location</h1>
+         <div class="map-responsive">
+          <img class="venue-expo-image2" src="images/expolocation/Rakesh-2-.jpg"/>
+          <img class="venue-expo-image1" src="images/expolocation/hitex.jpg" /> 
+            <!-- <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.7786584595515!2d78.3765987!3d17.470305000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb922d7708a939%3A0x6608389e21aa1310!2sHITEX%20Exhibition%20Centre!5e0!3m2!1sen!2sin!4v1714725579362!5m2!1sen!2sin" width="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            <a href="https://www.google.com/maps/place/HITEX+Exhibition+Centre/@17.4702078,78.376588,18z/data=!4m6!3m5!1s0x3bcb922d7708a939:0x6608389e21aa1310!8m2!3d17.470305!4d78.3765987!16s%2Fg%2F1ygltgfh5?entry=ttu" class="location-link" target="_blank">
+              <img class="location-mobile-view" src="images/expolocation/expolocation.png" alt="Location Image">
+            </a>
+         </div>
+       </div>
     </section>
     <section id="contact">
       
@@ -492,6 +495,7 @@
        ></image>
       </svg>
       </div>
+    
     </section>
     <footer>
       <nav>
@@ -505,12 +509,26 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 Fracspace. All Rights Reserved.</p>
+      <p>Copyright &#169; 2024 Fracspace. All Rights Reserved.</p>   
+    </footer>
+    <script>
+      function toggleMenu() {
+      const icon = document.querySelector(".hamburger-icon");
+      const menuLinks = document.querySelector('.menu-links');
+      const nav = document.querySelector('nav');
+  
+        menuLinks.classList.toggle('show');
+        nav.classList.toggle("open");
+        icon.classList.toggle("open");
+      }
 
+      function navigate() {
+         window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
 
       
-    </footer>
-    <script src="script.js"></script>
+    </script>
+    <!-- <script src="script.js"></script> -->
     <script src="slider.js"></script>
   </body>
 </html>

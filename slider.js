@@ -33,5 +33,9 @@ document.addEventListener("DOMContentLoaded", function() {
         currentIndex = (index + items.length) % items.length;
         items[currentIndex].style.display = "block";
     }
+
+    function showAlert(){
+        console.log("hello");
+    }
 });
   

@@ -1,5 +1,5 @@
-/* CSS for screen sizes between 1000px and 1100px */
-@media screen and (max-width: 700px) and (min-width: 1200px) {
+
+@media screen and (max-width: 1200px){
    
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
@@ -979,4 +979,12 @@
 
 
   }
+
+
+@media screen and (max-width:1000){
+  .hero-title{
+    color:blue
+  }
+}
+
   
