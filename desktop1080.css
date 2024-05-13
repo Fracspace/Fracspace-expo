@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1100px){
    
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
@@ -981,10 +981,5 @@
   }
 
 
-@media screen and (max-width:1000){
-  .hero-title{
-    color:blue
-  }
-}
 
   
