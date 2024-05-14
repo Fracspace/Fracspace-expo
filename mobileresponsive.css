@@ -1,5 +1,9 @@
 @media screen and (max-width:1000) {
-  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
 .container {
   position: absolute;
   top: 115px;
@@ -623,6 +627,12 @@
 
 
 @media screen and (max-width:420px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   #profile{
     height: 42vh;
     margin-bottom: auto;
