@@ -1,4 +1,4 @@
-@media screen and (max-width:1000) {
+@media screen and (max-width:1090) {
   * {
     margin: 0;
     padding: 0;
@@ -92,7 +92,7 @@
 .item .item-content {
   position: absolute;
   border: none;
-  color: #f5f5f5;
+  color: #e93232;
   top: 70%;
   right: 100px;
   width: 300px;
@@ -183,7 +183,7 @@
 }
 
 .highlight {
-  color: #f0ba16;
+  color: #40b80c7d;
   font-weight:bolder;
 }
 

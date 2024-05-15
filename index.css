@@ -976,15 +976,10 @@ footer p {
   
   
   
- 
-  
   .cardContainer:hover::before {
     transform: translate(-50px, 50px);
   }
   
-
-
-
 
 
 .explore-container {
